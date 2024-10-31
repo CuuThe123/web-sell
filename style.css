@@ -79,18 +79,19 @@ html {
 }
 
 /* Căn chỉnh các nút ở bên phải header */
-#actions .item {
-    margin-left: 22px;
-    color: black; /* Màu mặc định đen */
+#actions {
+    display: flex;
+    align-items: center;
 }
 
-/* Hiệu ứng hover cho các nút bên phải */
-#actions .item:hover {
-    background-color: black; /* Nền đen */
-    color: white; /* Chữ trắng */
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: all 0.4s;
+#actions .item {
+    margin-right: 10px; /* Khoảng cách giữa các mục */
+}
+
+#actions .item img {
+    width: 24px; /* Điều chỉnh kích thước biểu tượng */
+    height: auto;
+    cursor: pointer;
 }
 
 /* Bù chiều cao của header bằng padding-top cho banner */
